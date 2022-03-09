@@ -7,9 +7,9 @@
        sshagent(['kubeadm']){
          script{
            try{
-             sh "sspass -p kubeadm@1234 ssh -o StrictHostKeyChecking=no kubeadm@20.193.238.113 pwd"
+             sh "sshpass -p kubeadm@1234 ssh -o StrictHostKeyChecking=no kubeadm@20.193.238.113 pwd"
            }catch(error){
-             sh "sspass -p kubeadm@1234 ssh -o StrictHostKeyChecking=no kubeadm@20.193.238.113 pwd"
+             sh "sshpass -p kubeadm@1234 ssh -o StrictHostKeyChecking=no kubeadm@20.193.238.113 pwd"
            }
          }
       }
